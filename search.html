@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Page</title>
+</head>
+<body>
+
+    <h2>Search</h2>
+
+    <input type="text" id="search" placeholder="Enter search name">
+
+    <button onclick="search()">Search</button>
+
+    <p id="result"></p>
+
+    <script>
+        function search() {
+            let n = document.getElementById("search").value;
+
+            if (n == "") {
+                alert("Please enter something");
+            }
+            else {
+                document.getElementById("result").innerHTML =
+                    "You searched for: " + n;
+            }
+        }
+    </script>
+
+</body>
+</html>

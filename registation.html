@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    Name:
+    <input type="text" id="name" placeholder="Enter name">
+    <br><br>
+
+    Roll Number:
+    <input type="text" id="roll" placeholder="Enter roll number">
+    <br><br>
+
+    <button onclick="add()">Submit</button>
+
+    <p id="result"></p>
+
+    <script>
+        function add() {
+            let n = document.getElementById("name").value;
+            let roll = document.getElementById("roll").value;
+            if (n == "" || r == "") {
+                alert("Please fill all fields");
+            }
+            else {
+                document.getElementById("result").innerHTML =
+                    "Name: " + n + "<br>Roll Number: " + roll;
+            }
+
+        }
+    </script>
+
+</body>
+</html>
